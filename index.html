@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google icon and fonts -->
+    <link href="style.css" rel="stylesheet" >
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <title>Wordle</title>
+</head>
+<body onkeydown="keyboardInput(event)" onC>
+    <div id="container">
+        <!-- Logo for Wordle -->
+        <div class="logo">
+            <img src="https://seeklogo.com/images/W/wordle-logo-A0C53B8ED3-seeklogo.com.png">
+        </div>
+        <div class="navigation">
+            <button id="giveup-status" onClick="ogword()">Give Up!</button>
+        </div>
+
+        <!-- Game area -->
+        <div class="game-area">
+            <!-- Each row contains 5 boxes for user input -->
+            <div class="letter-row">
+                <div class="letter-block"></div>
+                <div class="letter-block"></div>
+                <div class="letter-block"></div>
+                <div class="letter-block"></div>
+                <div class="letter-block"></div>
+            </div>
+            <div class="letter-row">
+                <div class="letter-block"></div>
+                <div class="letter-block"></div>
+                <div class="letter-block"></div>
+                <div class="letter-block"></div>
+                <div class="letter-block"></div>
+            </div>
+            <div class="letter-row">
+                <div class="letter-block"></div>
+                <div class="letter-block"></div>
+                <div class="letter-block"></div>
+                <div class="letter-block"></div>
+                <div class="letter-block"></div>
+            </div>
+            <div class="letter-row">
+                <div class="letter-block"></div>
+                <div class="letter-block"></div>
+                <div class="letter-block"></div>
+                <div class="letter-block"></div>
+                <div class="letter-block"></div>
+            </div>
+            <div class="letter-row">
+                <div class="letter-block"></div>
+                <div class="letter-block"></div>
+                <div class="letter-block"></div>
+                <div class="letter-block"></div>
+                <div class="letter-block"></div>
+            </div>
+        </div>
+        <!-- Notification statement that keeps updating the  -->
+        <div id="notification">
+            Let's start!
+        </div>
+        <!-- Keyboard controls -->
+        <div id="keyboard">
+            <div id="top-keys">
+                <span class="keyboard-keys-top" id="keyboard-Q">Q</span>
+                <span class="keyboard-keys-top" id="keyboard-W">W</span>
+                <span class="keyboard-keys-top" id="keyboard-E">E</span>
+                <span class="keyboard-keys-top" id="keyboard_R">R</span>
+                <span class="keyboard-keys-top" id="keyboard_T">T</span>
+                <span class="keyboard-keys-top" id="keyboard_Y">Y</span>
+                <span class="keyboard-keys-top" id="keyboard_U">U</span>
+                <span class="keyboard-keys-top" id="keyboard_I">I</span>
+                <span class="keyboard-keys-top" id="keyboard_O">O</span>
+                <span class="keyboard-keys-top" id="keyboard_P">P</span>
+            </div>
+            <div id="mid-keys">
+                <span class="keyboard-keys-mid" id="keyboard-Q">A</span>
+                <span class="keyboard-keys-mid" id="keyboard-W">S</span>
+                <span class="keyboard-keys-mid" id="keyboard-E">D</span>
+                <span class="keyboard-keys-mid" id="keyboard_R">F</span>
+                <span class="keyboard-keys-mid" id="keyboard_T">G</span>
+                <span class="keyboard-keys-mid" id="keyboard_Y">H</span>
+                <span class="keyboard-keys-mid" id="keyboard_U">J</span>
+                <span class="keyboard-keys-mid" id="keyboard_I">K</span>
+                <span class="keyboard-keys-mid" id="keyboard_O">L</span>
+            </div>
+            <div id="bottom-keys">
+                <span class="keyboard-keys-bottom" id="delete-arrow">←</span>
+                <span class="keyboard-keys-bottom" id="keyboard-Q">Z</span>
+                <span class="keyboard-keys-bottom" id="keyboard-W">X</span>
+                <span class="keyboard-keys-bottom" id="keyboard-E">C</span>
+                <span class="keyboard-keys-bottom" id="keyboard_R">V</span>
+                <span class="keyboard-keys-bottom" id="keyboard_T">B</span>
+                <span class="keyboard-keys-bottom" id="keyboard_Y">N</span>
+                <span class="keyboard-keys-bottom" id="keyboard_U">M</span>
+                <span class="keyboard-keys-bottom" id="enter-key">Enter</span>
+            </div>
+        </div>
+
+    </div>
+  <script src="script.js"></script>
+
+</body>
+</html>
